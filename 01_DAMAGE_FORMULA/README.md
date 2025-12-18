@@ -28,7 +28,28 @@ This is the best starting point if you want to understand:
 
 ---
 
-### 2️⃣ Hit Types Explained (Crit, Affinity, Precision, Abrasion)  
+### 2️⃣ Mathematical Damage Model  
+📄 [`notes/math_model.md`](./notes/math_model.md)
+
+A formal, math-oriented breakdown of the damage formula.
+
+Covers:
+
+- Exact base damage construction  
+- Physical vs Attribute damage separation  
+- Additive vs multiplicative components  
+- Where each stat enters the calculation  
+
+Recommended for readers who prefer:
+
+- Explicit formulas  
+- Verifying calculations independently  
+- Understanding *why* spreadsheet outputs behave as they do
+
+
+---
+
+### 3️⃣ Hit Types Explained (Crit, Affinity, Precision, Abrasion)  
 📄 [`notes/hit_types_explained.md`](./notes/hit_types_explained.md)
 
 Explains how hit types work and, critically, why they are **mutually exclusive**.
@@ -45,7 +66,7 @@ Essential reading for anyone optimizing:
 
 ---
 
-### 3️⃣ Penetration & External Defense (Summary)  
+### 4️⃣ Penetration & External Defense (Summary)  
 📄 [`notes/penetration_external_defense.md`](./notes/penetration_external_defense.md)
 
 Introduces the concept of **external defense** — a hidden mitigation layer inferred from CN sources and testing.
@@ -62,7 +83,7 @@ A deeper dive is available in **Section 02**.
 
 ---
 
-### 4️⃣ Damage Calculation Spreadsheets  
+### 5️⃣ Damage Calculation Spreadsheets  
 📂 `spreadsheets/`
 
 Contains the **damage calculator spreadsheets** used throughout this project.
@@ -76,7 +97,7 @@ Detailed usage instructions are documented separately.
 
 ---
 
-### 5️⃣ Source Links & Translations  
+### 6️⃣ Source Links & Translations  
 📂 `sources/`
 
 Primary and secondary references used to build this model, including:

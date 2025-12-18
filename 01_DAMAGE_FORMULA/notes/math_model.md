@@ -181,7 +181,44 @@ Rounded according to internal game rules.
 
 ---
 
-## 6. Practical Implications
+## 6. Full Damage Formula (Consolidated View)
+
+Putting all components together, the expected damage of a single hit can be represented as:
+
+`FinalDamage` =
+(`PhysBase` + `AttrBase` + `FlatDamage`)
+× `HitTypeMultiplier`
+× `FinalDamageModifiers`
+
+Where:
+
+`PhysBase` =
+((`Pmin` + `Pmax`) / 2)
+× (1 + `PhysPen` / 200)
+× (1 + `PhysBonus`)
+× `PhysMult`
+
+`AttrBase` =
+((`Amin` + `Amax`) / 2)
+× `MainElementMult`
+× (1 + `AttrPen` / 200 + `AttrBonus`)
+× `SchoolBonus`
+
+`HitTypeMultiplier` ∈ {  
+`Normal` = 1.0,  
+`Critical` = 1.5,  
+`Affinity` = 1.35,  
+`Precision` = `MaxRoll` / `AvgRoll`,  
+`Abrasion` = `MinRoll` / `AvgRoll`  
+}
+
+`FinalDamageModifiers` include any remaining global effects applied after hit resolution (e.g. Affinity Damage Bonus, control-condition bonuses, exhaustion bonuses, etc.).
+
+This representation shows the full picture: **physical damage and attribute damage are calculated independently, added together with flat damage, then modified once by hit type and final multipliers**.
+
+---
+
+## 7. Practical Implications
 
 From the math, we can conclude:
 
@@ -195,7 +232,7 @@ These conclusions are reflected directly in the spreadsheet results.
 
 ---
 
-## 7. Relation to the Spreadsheet
+## 8. Relation to the Spreadsheet
 
 The calculator spreadsheet implements this model by:
 
@@ -208,7 +245,7 @@ This document exists so the spreadsheet is **auditable**, not opaque.
 
 ---
 
-## 8. Limitations
+## 9. Limitations
 
 - Enemy external defense values are unknown
 - Bosses may vary internally

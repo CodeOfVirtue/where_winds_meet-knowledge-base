@@ -1,44 +1,79 @@
 # Penetration & External Defense (Summary)
 
-This note provides a **brief explanation** of how penetration is modeled in the damage formula.
-A deeper discussion is available in Section 02.
+This note provides a **high-level explanation** of how `penetration` appears to influence damage in *Where Winds Meet*, based on currently available CN sources, community calculators, and direct testing.
+
+A deeper and more technical discussion — including formulas, edge cases, and reconciliation of conflicting data — is provided in **Section 02**.
 
 ---
 
 ## External Defense (Conceptual)
 
-“External defense” refers to a **hidden damage mitigation layer** inferred from CN sources and testing.
+In community discussions, the term **“external defense”** or **“resistance”** is often used to describe a form of **damage mitigation that is not clearly exposed in the UI**.
 
-Key points:
-- It is **not** the same as the visible Physical Defense stat
-- Bosses appear to have this mitigation even when no defense value is shown
-- Normal enemies may or may not have meaningful values
+What can be stated with confidence:
 
-Because it is hidden, exact values are unknown.
+- It is **not identical** to the visible `Physical Defense` stat shown on enemies.
+- Bosses appear to apply some form of mitigation **even when no explicit defense value is displayed**.
+- Normal enemies may or may not have meaningful mitigation.
+- Exact values and implementation details are **not directly observable**.
 
----
-
-## How Penetration Interacts
-
-Penetration reduces the effect of this mitigation.
-
-- If penetration is **lower than** external defense:
-  - Damage is reduced
-- If penetration **exceeds** external defense:
-  - Excess penetration still increases damage
-  - Excess benefit is applied at **50% efficiency**
-
-Example (simplified):
-- 30 penetration vs 0 external defense → ~15% bonus damage
+At present, it is safer to treat `external defense` as a **conceptual placeholder** for *unknown or opaque mitigation behavior*, rather than as a clearly defined stat.
 
 ---
 
-## Why This Matters
+## How `penetration` Appears to Work (Observed Behavior)
 
-This behavior explains why:
-- Penetration remains valuable against bosses
-- Penetration is not a simple flat damage multiplier
-- Physical penetration often scales better than expected
+Across multiple independent sources and tests, `penetration` consistently increases damage in a way that is:
 
-For a full explanation, examples, and caveats, see:
-- [`../../02_PENETRATION_EXTERNAL_DEFENSE/README.md`](../../02_PENETRATION_EXTERNAL_DEFENSE/README.md)
+- broadly **linear** within practical stat ranges,
+- effective against bosses and normal enemies alike,
+- and **not nullified** by low or near-zero displayed defense.
+
+However, the **exact conversion rate** from `penetration` to damage increase is **not fully agreed upon**.
+
+### What different sources report
+
+- Multiple CN explanations and player tests suggest that:
+  - **~3–5% total damage increase per 10 `penetration`** is a reasonable real-world estimate.
+- Spreadsheet-based implementations derived from CN formulas frequently show:
+  - **~3.7–4.0% per 10 `penetration`** under controlled conditions.
+- Some video explanations from reputable CN creators report **higher per-point values**, which do not perfectly align with spreadsheet results.
+
+All of these sources appear internally consistent within their own assumptions — but **do not yet fully agree with each other**.
+
+---
+
+## What Is Still Unclear
+
+The following points remain **open questions**:
+
+- How (or if) enemy `resistance` interacts with `penetration`.
+- Whether `penetration` is partially offset, dampened, or redistributed internally.
+- Why some explanations arrive at higher per-point values than formula-based calculators.
+- Whether additional hidden factors affect `penetration`’s effective contribution in combat.
+
+As a result, `penetration` should not currently be described as a fixed-percentage stat with a universally agreed conversion rate.
+
+---
+
+## Practical Interim Understanding
+
+Until these discrepancies are resolved, the most defensible summary is:
+
+- `penetration` **scales damage linearly within tested ranges**.
+- A working estimate of **~3–5% damage increase per 10 `penetration`** is reasonable for practical comparisons.
+- The **exact conversion depends on factors that are not yet fully understood**.
+- This section should be treated as **provisional** and updated as new evidence becomes available.
+
+---
+
+## Status & Next Steps
+
+This topic is **actively under investigation**.
+
+Further clarification is expected through:
+- direct communication with CN content creators,
+- comparison against original spreadsheets used in CN theorycrafting,
+- and additional controlled testing.
+
+Any confirmed revisions to `penetration`’s behavior will be documented explicitly and reflected throughout the damage model.

@@ -50,7 +50,7 @@ Recommended for readers who prefer:
 ---
 
 ### 3️⃣ Hit Types Explained (Crit, Affinity, Precision, Abrasion)  
-📄 [`notes/01_hit_types_explained.md`](./01_notes/hit_types_explained.md)
+📄 [`notes/01_hit_types_explained.md`](./notes/01_hit_types_explained.md)
 
 Explains how hit types work and, critically, why they are **mutually exclusive**.
 
@@ -67,7 +67,7 @@ Essential reading for anyone optimizing:
 ---
 
 ### 4️⃣ Penetration & External Defense (Summary)  
-📄 [`notes/04_penetration_external_defense.md`](./04_notes/penetration_external_defense.md)
+📄 [`notes/04_penetration_external_defense.md`](./notes/04_penetration_external_defense.md)
 
 Introduces the concept of **external defense** — a hidden mitigation layer inferred from CN sources and testing.
 

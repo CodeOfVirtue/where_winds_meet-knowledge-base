@@ -13,7 +13,7 @@ While the model is believed to be accurate for current versions, it is **not off
 ## 📌 What You’ll Find in This Section
 
 ### 1️⃣ High-Level Damage Formula Overview  
-📄 [`notes/overview.md`](./notes/overview.md)
+📄 [`notes/00_overview.md`](./notes/00_overview.md)
 
 A **top-down explanation** of how damage is calculated in layers:
 
@@ -29,7 +29,7 @@ This is the best starting point if you want to understand:
 ---
 
 ### 2️⃣ Mathematical Damage Model  
-📄 [`notes/math_model.md`](./notes/math_model.md)
+📄 [`notes/02_math_model.md`](./notes/02_math_model.md)
 
 A formal, math-oriented breakdown of the damage formula.
 
@@ -50,7 +50,7 @@ Recommended for readers who prefer:
 ---
 
 ### 3️⃣ Hit Types Explained (Crit, Affinity, Precision, Abrasion)  
-📄 [`notes/hit_types_explained.md`](./notes/hit_types_explained.md)
+📄 [`notes/01_hit_types_explained.md`](./01_notes/hit_types_explained.md)
 
 Explains how hit types work and, critically, why they are **mutually exclusive**.
 
@@ -67,7 +67,7 @@ Essential reading for anyone optimizing:
 ---
 
 ### 4️⃣ Penetration & External Defense (Summary)  
-📄 [`notes/penetration_external_defense.md`](./notes/penetration_external_defense.md)
+📄 [`notes/04_penetration_external_defense.md`](./04_notes/penetration_external_defense.md)
 
 Introduces the concept of **external defense** — a hidden mitigation layer inferred from CN sources and testing.
 

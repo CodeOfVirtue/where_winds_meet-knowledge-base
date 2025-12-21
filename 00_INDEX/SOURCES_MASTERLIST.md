@@ -34,14 +34,21 @@ Where applicable, notes are provided on:
 
 ## CN Articles & Forum Posts
 
-### SOHU – Damage Formula Explanation
+### nga.cn – Damage Formula Explanation
 - **Type:** Forum / Article
 - **Language:** Chinese
-- **Link:** <insert link>
+- **Link:** [https://bbs.nga.cn/read.php?tid=43152002&_fp=5&rand=706](https://bbs.nga.cn/read.php?tid=43152002&_fp=5&rand=706)
 - **Notes:**  
-  Explains damage calculation, penetration overflow, and hit-type behavior.
-  Primary source for “external defense” interpretation.
+  Explains damage calculation, penetration and some more aspects.
+  One source for “external defense” interpretation.
 
+### gamekee – General guides
+- **Type:** Forum / Article
+- **Language:** Chinese
+- **Link:** [https://www.gamekee.com/yysls/](https://www.gamekee.com/yysls/)
+- **Notes:**  
+  Explains damage calculation, penetration and some more aspects.
+  One source for “external defense” interpretation.
 ---
 
 ## Video Explanations
@@ -50,12 +57,15 @@ Where applicable, notes are provided on:
 - **Type:** Video
 - **Language:** Chinese
 - **Platform:** Bilibili
+- **Creator:** Yokalenlove
+- **Link:** [https://www.bilibili.com/video/BV1J9dYY3Ecb/](https://www.bilibili.com/video/BV1J9dYY3Ecb/)
 - **Notes:**  
-  Walkthrough of the original CN spreadsheet and formula assumptions.
+  Walkthrough of the original CN spreadsheet and formula assumptions. Yokalenlove has done a lot of research and largly contributed to the most detailed analysis for damage so far.
 
 ### YouTube – Community Explanation & Spreadsheet Overview
 - **Type:** Video
 - **Language:** English
+- **Link:** https://bbs.nga.cn/read.php?tid=43152002&_fp=5&rand=706
 - **Notes:**  
   English explanation of the spreadsheet and mechanics, including limitations.
 
@@ -66,12 +76,14 @@ Where applicable, notes are provided on:
 ### Interactive Map (Chinese)
 - **Type:** Web Tool
 - **Language:** Chinese
+- **Link:** [https://act.ds.163.com/6edef85118d3037a/?mapLevel=0&zoom=5](https://act.ds.163.com/6edef85118d3037a/?mapLevel=0&zoom=5)
 - **Notes:**  
   Most complete map, but naming differs from EN localization.
 
 ### Interactive Map (English / Translated)
 - **Type:** Web Tool
 - **Language:** English
+- **Link:** [https://boarhat.gg/games/where-winds-meet/interactive-map/](https://boarhat.gg/games/where-winds-meet/interactive-map/)
 - **Notes:**  
   Improved translation, actively updated, but still contains mismatches.
 
@@ -82,7 +94,7 @@ Where applicable, notes are provided on:
 ### PvP Combo Database
 - **Type:** Website
 - **Language:** English
-- **Link:** https://www.wwmcombos.com/
+- **Link:** [https://www.wwmcombos.com](https://www.wwmcombos.com)
 - **Notes:**  
   Community-maintained PvP combo reference.
 

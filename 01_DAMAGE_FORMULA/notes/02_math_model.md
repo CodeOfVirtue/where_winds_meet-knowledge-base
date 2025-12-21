@@ -146,9 +146,7 @@ So:
 
 `FinalDamage` =
 (
-  `ExtTerm`
-  + `OffAttrTerm`
-  + `MainAttrTerm`
+  `ExtTerm` + `OffAttrTerm` + `MainAttrTerm`
 )
 × `HitMult`
 × `AdditiveIncSum`

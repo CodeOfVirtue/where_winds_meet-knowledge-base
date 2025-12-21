@@ -65,7 +65,7 @@ Where applicable, notes are provided on:
 ### YouTube – Community Explanation & Spreadsheet Overview
 - **Type:** Video
 - **Language:** English
-- **Link:** https://bbs.nga.cn/read.php?tid=43152002&_fp=5&rand=706
+- **Link:** [https://www.youtube.com/watch?v=VCx1G5w78Tw](https://www.youtube.com/watch?v=VCx1G5w78Tw)
 - **Notes:**  
   English explanation of the spreadsheet and mechanics, including limitations.
 
@@ -105,6 +105,7 @@ Where applicable, notes are provided on:
 ### Mystic Skill Scaling Spreadsheet
 - **Type:** Spreadsheet
 - **Language:** English / Mixed
+- **Link:** [https://www.youtube.com/watch?v=VCx1G5w78Tw](https://www.youtube.com/watch?v=VCx1G5w78Tw)
 - **Notes:**  
   Focused on Mystic Skills and non-martial scaling.
 
